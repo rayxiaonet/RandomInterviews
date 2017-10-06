@@ -1,0 +1,11 @@
+{
+  "name": "interview-nsd",
+  "description": "New System Dependencies",
+  "version": "0.0.1",
+  "apiVersion": "1",
+  "main": "nsd.js",
+  "author": "Ray Xiao <rayxiaonet@gmail.com>",
+  "scripts": {
+    "start": "node ."
+  }
+}
