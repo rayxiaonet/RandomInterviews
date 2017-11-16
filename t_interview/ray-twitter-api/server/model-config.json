@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "ray-twitter-api",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "ray-twitter-api",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "ray-twitter-api",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "ray-twitter-api",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "ray-twitter-api",
+    "public": false
+  },
+  "TwitterUser": {
+    "dataSource": "ray-twitter-api",
+    "public": true
+  },
+  "Tweet": {
+    "dataSource": "ray-twitter-api",
+    "public": true
+  },
+  "TweetCount": {
+    "dataSource": "ray-twitter-api",
+    "public": true
+  },
+  "Topics": {
+    "dataSource": "ray-twitter-api",
+    "public": true
+  }
+}

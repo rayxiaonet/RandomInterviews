@@ -1,0 +1,28 @@
+{
+  "name": "Message",
+  "base": "Model",
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "reload": {
+      "accepts": [
+        {
+          "arg": "msg",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "count",
+        "type": "number"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

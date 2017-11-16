@@ -1,0 +1,25 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ray-twitter-redis": {
+    "host": "localhost",
+    "port": 6379,
+    "url": "redis://localhost:6379",
+    "password": "",
+    "name": "ray-twitter-redis",
+    "db": null,
+    "connector": "kv-redis"
+  },
+  "ray-twitter-api": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/raytwittermain",
+    "database": "raytwittermain",
+    "password": "",
+    "name": "ray-twitter-api",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

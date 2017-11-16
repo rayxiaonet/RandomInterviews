@@ -1,0 +1,12 @@
+{
+  "ray-twitter-api": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://localhost:27017/raytwittermain",
+    "database": "raytwittermain",
+    "password": "",
+    "name": "ray-twitter-api",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
