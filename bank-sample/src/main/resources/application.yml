@@ -1,0 +1,23 @@
+
+facebook:
+  client:
+    clientId: 1244131555651112
+    clientSecret: b6480ba182db0e7eba4605ae83a8220b
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+product:
+  mongo:
+    host: localhost
+    port: 27017
+    database: raytestdb
+

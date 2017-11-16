@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Demo</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <base href="/"/>
+    <link rel="stylesheet" type="text/css"
+          href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="home as home">
+<h1>Test Project - Ray Xiao</h1>
+<div class="container" ng-show="!home.authenticated">
+    <div>
+        With Facebook: <a href="/login/facebook">click here</a>
+    </div>
+
+</div>
+<div class="container" ng-show="home.authenticated">
+    Logged in as: <span ng-bind="home.user"></span>
+    <div>
+        Your Account balance is: <span ng-bind="home.balance"></span>
+    </div>
+    <div>you can:
+        <input name="amount" ng-model="home.amount"/>
+        <button ng-click="home.deposit()" class="btn btn-primary">deposit</button>
+        <button ng-click="home.withdraw()" class="btn btn-primary">withdraw</button>
+    </div>
+    <div>
+        {{home.message}}
+    </div>
+    <div>
+        <button ng-click="home.logout()" class="btn btn-primary">Logout</button>
+    </div>
+</div>
+<script type="text/javascript" src="/webjars/angularjs/angular.min.js"></script>
+<script type="text/javascript" src="/js/test.js"></script>
+</body>
+</html>

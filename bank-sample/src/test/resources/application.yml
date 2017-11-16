@@ -1,0 +1,11 @@
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+product:
+  mongo:
+    host: localhost
+    port: 12345
+    database: raytestdb
+
